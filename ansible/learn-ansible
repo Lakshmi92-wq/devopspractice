@@ -1,0 +1,19 @@
+ansible -i 54.235.19.87 ,all -e ansible_user=ec2user -e ansible=password=DevOps321 -m ping
+
+ansible -i 54.235.19.87 ,all -e ansible_user=ec2user -e ansible=password=DevOps321 -m ping
+
+ansible-playbooks (YAML)
+abc.yaml
+
+
+hosts.all
+-name:run a sample playbook
+tasks:-
+name:Execute Command
+command apt-get install nginx
+
+-name :Install the latest vesrion of apache
+ansible.builtin.dnf:
+name:httpd
+state:latest
+
