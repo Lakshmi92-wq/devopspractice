@@ -1,9 +1,11 @@
 -name :print simple tasks
 hosts:local host
-tasks
+vars:
+URL_PLAY:I love ansible
+tasks:
 -name :-print statement
 ansible builtin-debug:
-msg:-i love ansible
+msg: print - {{ URL_PLAY }}
 -name:print statement
 ansiblebuiltin-debug:
-msg:I love my country
+msg: print -{{ URL_PLAY }}

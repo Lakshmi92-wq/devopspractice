@@ -1,0 +1,9 @@
+-name :print simple tasks
+hosts:local host
+tasks
+-name :-print statement
+ansible builtin-debug:
+msg:-i love ansible
+-name:print statement
+ansiblebuiltin-debug:
+msg:I love my country
