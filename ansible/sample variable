@@ -5,5 +5,5 @@ tasks
 ansible builtin-debug:
 msg:-i love ansible
 -name:print statement
-ansiblebuiltin-debug
+ansiblebuiltin-debug:
 msg:I love my country
